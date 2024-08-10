@@ -2,3 +2,7 @@ node_modules/
 .yarn/cache/
 .yarn/install-state.gz
 .nx/
+
+public/app/plugins/**/dist/
+public/build/
+tsconfig.tsbuildinfo
