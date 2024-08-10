@@ -6,3 +6,7 @@ node_modules/
 public/app/plugins/**/dist/
 public/build/
 tsconfig.tsbuildinfo
+
+bin/
+data/
+pkg/server/wire_gen.go
