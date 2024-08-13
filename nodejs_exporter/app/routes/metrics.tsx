@@ -1,6 +1,7 @@
 import { ActionFunctionArgs } from "@remix-run/node";
 import { collectDefaultMetrics, register } from "prom-client";
 
+register.clear();
 collectDefaultMetrics();
 
 export
