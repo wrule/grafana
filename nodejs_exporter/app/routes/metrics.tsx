@@ -1,9 +1,9 @@
-import { ActionFunctionArgs, json } from "@remix-run/node";
+import { ActionFunctionArgs } from "@remix-run/node";
 import { collectDefaultMetrics, register } from "prom-client";
 
-collectDefaultMetrics();
+// collectDefaultMetrics();
 
 export
 async function loader({ request }: ActionFunctionArgs) {
-  return json({ hello: request.url });
+  return new Response('hello world', { headers: { 'content-type': 'text/plain' } });
 }
